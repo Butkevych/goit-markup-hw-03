@@ -96,7 +96,6 @@ h6 {
 .headline-button:focus {
   background-color: #404bbf;
 }
-.qualities-title,
 .team-title,
 .portfolio-title {
   color: #2e2f42;
@@ -106,6 +105,7 @@ h6 {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .qualities-name,
 .team-card-name,
@@ -167,12 +167,6 @@ h6 {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.team-title,
-.portfolio-title,
-.qualities-title {
-  margin-bottom: 72px;
-}
-
 .portfolio-list {
   display: flex;
   flex-direction: row;
@@ -222,11 +216,18 @@ h6 {
   flex-direction: row;
   gap: 40px;
 }
-.logo {
-  margin: 0;
-  padding: 0;
-}
+
 .footer-section a {
   display: block;
   margin-bottom: 16px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }

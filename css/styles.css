@@ -6,12 +6,14 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   margin-bottom: 0;
-}
-.container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+.container {
   width: 1158px;
+  margin: 0 auto;
 }
 main {
   flex-grow: 1;
@@ -33,9 +35,22 @@ main {
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .nav-link {
   color: #2e2f42;
@@ -55,11 +70,7 @@ a {
 .address-link:focus {
   color: #404bbf;
 }
-.header-container {
-  margin: 24px 156px;
-  display: flex;
-  justify-content: space-around;
-}
+
 .headline-section {
   background-color: #2e2f42;
 }
@@ -125,10 +136,97 @@ a {
 .footer-text {
   color: #f4f4fd;
 }
-.footer-container {
-  display: block;
+.footer-section .container {
   width: 264px;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 156px;
+}
+.qualities-list {
+  display: flex;
+  width: calc((1158px * 3) / 4);
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.qualities-item {
+  width: 264px;
+}
+.features-section {
+  padding: 120px 156px;
+}
+.team-list {
+  display: flex;
+  width: calc((1158px * 3) / 4);
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+}
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-title,
+.portfolio-title,
+.qualities-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-card {
+  width: 360px;
+  height: 420px;
+}
+.portfolio-section {
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+.headline-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 0;
+  padding: 16px 32px;
+}
+.headline-title {
+  width: 496px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.headline-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.logo {
+  margin: 0;
+  padding: 0;
+}
+.footer-section a {
+  display: block;
+  margin-bottom: 16px;
 }

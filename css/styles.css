@@ -229,8 +229,6 @@ header {
 }
 .footer-text {
   color: #f4f4fd;
-}
-.footer-container {
   display: block;
   max-width: 264px;
 }
